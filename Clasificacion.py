@@ -18,4 +18,4 @@ df_filtrado=df_filtrado[['Rk', 'Squad', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', '
 
 
 # Muestra el DataFrame filtrado
-st.table(df_filtrado)
+st.table(df_filtrado.round(2))
