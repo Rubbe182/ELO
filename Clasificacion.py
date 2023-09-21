@@ -4,9 +4,10 @@ import pandas as pd
 
 # Crea tu DataFrame
 tu_dataframe = pd.read_csv('Classification.csv')
+tu_dataframe =tu_dataframe.drop('Unnamed:0')
 
 # Título de la aplicación
-st.title('Filtrar DataFrame por Liga')
+st.title('Clasificacion Ligas Europa')
 
 ligas_seleccionadas = st.multiselect('Selecciona Ligas', tu_dataframe['League'].unique())
 
