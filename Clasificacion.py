@@ -4,7 +4,9 @@ import pandas as pd
 
 # Crea tu DataFrame
 tu_dataframe = pd.read_csv('Classification.csv')
-tu_dataframe =tu_dataframe.drop('Unnamed:0')
+tu_dataframe =tu_dataframe[['Rk', 'Squad', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', 'Pts', 'Pts/MP',
+       'xG', 'xGA', 'xGD', 'xGD/90', 'Last 5', 'Attendance', 'Top Team Scorer',
+       'Goalkeeper']]
 
 # Título de la aplicación
 st.title('Clasificacion Ligas Europa')
