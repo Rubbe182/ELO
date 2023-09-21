@@ -18,4 +18,4 @@ df_filtrado=df_filtrado[['Rk', 'Squad', 'MP', 'W', 'D', 'L', 'GF', 'GA', 'GD', '
 
 
 # Muestra el DataFrame filtrado
-st.write(df_filtrado.head(20))
+st.table(df_filtrado)
